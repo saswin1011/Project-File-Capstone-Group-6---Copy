@@ -1,0 +1,197 @@
+body {
+    background: linear-gradient(to right, #15002b, #2c0039);
+    color: #e0d7f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 80px 20px 20px;
+  }
+  
+  .quiz-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #f5f0ff;
+  }
+  
+  .quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  .quiz-card {
+    background: rgba(80, 0, 110, 0.85);
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(150, 0, 255, 0.25);
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+  }
+  .quiz-card h3 {
+    margin-top: 0;
+    font-size: 1.6em;
+    color: #faf5ff;
+  }
+  .quiz-card p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #cbb9f7;
+  }
+  .quiz-card:hover {
+    background: rgba(110, 0, 160, 0.95);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(200, 0, 255, 0.4);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #230043, #3c0068);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(100, 0, 200, 0.5);
+  }
+  .navbar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid #b48cf5;
+  }
+  .navbar h1 {
+    font-size: 1.8em;
+    color: #e5d1ff;
+    margin: 0;
+    font-weight: 600;
+  }
+  .navbar li {
+    list-style: none;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: #e5d1ff;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+  }
+  .navbar li a:hover {
+    background: rgba(180, 120, 255, 0.2);
+    border: 1px solid #b48cf5;
+    color: #ffffff;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .delete-btn:hover {
+    background: #b02a37;
+  }
+  
+  .add-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(60, 0, 90, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(120, 0, 180, 0.4);
+  }
+  .add-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f0ff;
+  }
+  .add-form input, .add-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #2a003f;
+    color: #e0d7f8;
+    border: 1px solid #b48cf5;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  .add-form button {
+    width: 100%;
+    padding: 12px;
+    background: #7b1fa2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .add-form button:hover {
+    background: #9c27b0;
+  }
+  
+  .add-btn {
+    padding: 12px 20px;
+    background: #7b1fa2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .add-btn:hover {
+    background: #9c27b0;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 50px;
+    width: 100%;
+  }
+  .search-box {
+    flex: 1;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    background: #faf5ff;
+    color: #2c0039;
+  }
+  .search-box::placeholder {
+    color: rgba(131, 129, 129, 0.6);
+  }
+  .search-btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background: #7b1fa2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .search-btn:hover {
+    background: #9c27b0;
+  }
+  
